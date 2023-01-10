@@ -1,4 +1,5 @@
 {
+  "routes": [{ "route": "/" }, { "route": "/test" }],
   "navigationFallback": {
     "rewrite": "/index.html"
   }
