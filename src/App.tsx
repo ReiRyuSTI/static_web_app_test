@@ -2,7 +2,6 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { RouterConfig } from "./router/RouterConfig";
-import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -21,8 +20,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <Link to="/">home</Link>
-      <Link to="/test">test</Link>
       <RouterConfig />
     </div>
   );
