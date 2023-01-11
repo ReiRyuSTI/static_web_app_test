@@ -1,19 +1,4 @@
 {
-  "navigationFallback": {
-    "rewrite": "/index.html"
-  },
-  "routes": [
-    {
-      "route": "/test",
-      "allowedRoles": ["authenticated"]
-    }
-  ],
-  "responseOverrides": {
-    "401": {
-      "statusCode": 302,
-      "redirect": "/"
-    }
-  },
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
@@ -34,6 +19,21 @@
           }
         }
       }
+    }
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "routes": [
+    {
+      "route": "/test",
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/"
     }
   }
 }
