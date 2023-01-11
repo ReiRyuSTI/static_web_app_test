@@ -19,5 +19,8 @@
         }
       }
     }
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html"
   }
 }
