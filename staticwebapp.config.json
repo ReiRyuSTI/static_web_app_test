@@ -4,10 +4,6 @@
   },
   "routes": [
     {
-      "route": "/*",
-      "allowedRoles": ["anonymous"]
-    },
-    {
       "route": "/test",
       "allowedRoles": ["authenticated"]
     }
