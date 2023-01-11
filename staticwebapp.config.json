@@ -1,7 +1,4 @@
 {
-  "navigationFallback": {
-    "rewrite": "/index.html"
-  },
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
@@ -22,5 +19,8 @@
         }
       }
     }
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html"
   }
 }

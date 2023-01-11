@@ -6,6 +6,7 @@ export const RouterConfig = () => {
     <BrowserRouter>
       <Link to="/">home</Link>
       <Link to="/test">test</Link>
+      <a href="/.auth/login/b2c">login</a>
       <Routes>
         <Route path="/" element={<>abc</>} />
         <Route path="test" element={<>test</>} />
