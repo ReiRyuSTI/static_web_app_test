@@ -9,7 +9,7 @@
               "clientSecretSettingName": "B2C_SECRET"
             },
             "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://undefined/ryuevidenttest.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_React_Test_SUSI"
+              "wellKnownOpenIdConfiguration": "https://ryuevidenttest.b2clogin.com/ryuevidenttest.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_React_Test_SUSI"
             }
           },
           "login": {
