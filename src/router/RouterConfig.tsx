@@ -11,9 +11,8 @@ export const RouterConfig = () => {
       <Link to="/">home</Link>
       <Link to="/test">test</Link>
       <Routes>
-        <Route path="/" element={<>abc</>} />
         <Route
-          path="test"
+          path="/"
           element={
             <>
               <button onClick={() => instance.loginRedirect(loginRequest)}>
@@ -23,6 +22,7 @@ export const RouterConfig = () => {
             </>
           }
         />
+        <Route path="test" element={<>login fin</>} />
       </Routes>
     </BrowserRouter>
   );
