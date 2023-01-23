@@ -60,7 +60,9 @@ module.exports = {
   optimization: {
     minimizer: [
       new TerserPlugin({
-        /* additional options here */
+        terserOptions: {
+          compress: { drop_console: true },
+        },
       }),
     ],
   },

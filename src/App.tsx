@@ -9,6 +9,8 @@ import { PublicClientApplication } from "@azure/msal-browser";
 function App() {
   const pca = new PublicClientApplication(msalConfig);
   const data = process.env.REACT_APP_HELLO_WORLD || "non data";
+  console.log(data);
+
   return (
     <MsalProvider instance={pca}>
       <div className="App">
