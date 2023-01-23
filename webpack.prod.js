@@ -28,6 +28,11 @@ module.exports = {
     new Dotenv({
       path: path.resolve(__dirname, ".env"),
     }),
+    new TerserPlugin({
+      terserOptions: {
+        compress: { drop_console: true },
+      },
+    }),
   ],
   module: {
     rules: [
@@ -55,15 +60,6 @@ module.exports = {
         issuer: /\.[jt]sx?$/,
         use: ["@svgr/webpack"],
       },
-    ],
-  },
-  optimization: {
-    minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          compress: { drop_console: true },
-        },
-      }),
     ],
   },
 };
