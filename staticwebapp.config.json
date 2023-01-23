@@ -1,38 +1,4 @@
 {
-  "auth": {
-    "identityProviders": {
-      "customOpenIdConnectProviders": {
-        "aadb2c": {
-          "registration": {
-            "clientIdSettingName": "AADB2C_PROVIDER_CLIENT_ID",
-            "clientCredential": {
-              "clientSecretSettingName": "AADB2C_PROVIDER_CLIENT_SECRET"
-            },
-            "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://ryuevidenttest.b2clogin.com/ryuevidenttest.onmicrosoft.com/Static Web Apps Route/v2.0/.well-known/openid-configuration"
-            }
-          },
-          "login": {
-            "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
-            "scopes": [],
-            "loginParameterNames": []
-          }
-        }
-      }
-    }
-  },
-  "routes": [
-    {
-      "route": "/test",
-      "allowedRoles": ["authenticated"]
-    }
-  ],
-  "responseOverrides": {
-    "401": {
-      "statusCode": 302,
-      "redirect": "/"
-    }
-  },
   "navigationFallback": {
     "rewrite": "/index.html"
   }

@@ -1,10 +1,14 @@
-import { useMsal } from "@azure/msal-react";
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import { loginRequest } from "../auth/config";
+
+import { useAuthAzure } from "hooks/authAzure";
 
 export const RouterConfig = () => {
-  const { instance } = useMsal();
+  const { loginAzure, logoutAzure, checkAuth } = useAuthAzure();
+  const accountCheck = checkAuth();
+  useEffect(() => {
+    console.log(accountCheck);
+  }, [accountCheck]);
 
   return (
     <BrowserRouter>
@@ -15,10 +19,8 @@ export const RouterConfig = () => {
           path="/"
           element={
             <>
-              <button onClick={() => instance.loginRedirect(loginRequest)}>
-                login
-              </button>
-              <button onClick={() => instance.logout()}>logout</button>
+              <button onClick={loginAzure}>login</button>
+              <button onClick={logoutAzure}>logout</button>
             </>
           }
         />
