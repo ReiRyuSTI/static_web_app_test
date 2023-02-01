@@ -11,6 +11,7 @@ module.exports = {
   devServer: {
     static: "./build",
     port: 3000,
+    historyApiFallback: { index: "/", disableDotRule: true },
   },
   target: "web",
   resolve: {
@@ -50,9 +51,17 @@ module.exports = {
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
-        test: /\.svg$/i,
-        issuer: /\.[jt]sx?$/,
-        use: ["@svgr/webpack"],
+        //拡張子がpng,jpg,gif,svgを検知したら
+        test: /\.(png|jpg|gif|svg)/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              //[name]は画像名、[ext]は拡張子
+              name: "images/[name].[ext]",
+            },
+          },
+        ],
       },
     ],
   },
