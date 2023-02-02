@@ -10,7 +10,7 @@ export const ShopCardComponent = (props: Props) => {
   const { shopInfo } = props;
 
   return (
-    <div className="flex h-64 w-full flex-col overflow-hidden rounded-md bg-gradient-to-tr from-[#FFE27D]/5 to-[#FFECA7] pb-4 shadow-md md:w-[550px] md:flex-row md:pb-0">
+    <div className="flex h-auto w-full flex-col overflow-hidden rounded-md bg-gradient-to-tr from-[#FFE27D]/5 to-[#FFECA7] pb-4 shadow-md md:h-64 md:w-[550px] md:flex-row md:pb-0">
       <img
         src={shopInfo.imgLink}
         className="h-64 w-auto object-contain p-2 md:h-auto md:w-1/2"
