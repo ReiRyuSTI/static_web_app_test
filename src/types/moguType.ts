@@ -1,8 +1,8 @@
 export type shopType = {
   title: string;
-  price: string;
   genre: string;
   smoker: string;
   openBar: string;
+  imgLink: string;
   linkTabelog: string;
 };

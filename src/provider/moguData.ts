@@ -1,0 +1,103 @@
+import { shopType } from "types/moguType";
+
+export const shopDataRyu: shopType[] = [
+  {
+    title: "中華で一杯いかがですか？",
+    genre: "餃子・中華",
+    smoker: "2階はすえる",
+    openBar: "あり",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im4.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13262493/",
+  },
+  {
+    title: "活気のあふれるお店",
+    genre: "居酒屋・ワイワイ",
+    smoker: "吸える",
+    openBar: "あり",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im1.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13165590/",
+  },
+  {
+    title: "汚いけどうまい店！！",
+    genre: "串・居酒屋・狭い",
+    smoker: "吸える",
+    openBar: "なし",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im2.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13026121/",
+  },
+  {
+    title: "九州のうまい店とかどう？",
+    genre: "居酒屋・九州",
+    smoker: "吸える",
+    openBar: "あり",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im3.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13030209/",
+  },
+  {
+    title: "激安エンタメ飲み放題",
+    genre: "串・呑兵衛",
+    smoker: "外！",
+    openBar: "あり・超おススメ！",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im6.png",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13150332/",
+  },
+];
+
+export const shopDataIdol: shopType[] = [
+  {
+    title: "圧倒的ネーム豚！！",
+    genre: "バル・ステーキ",
+    smoker: "店内喫煙所",
+    openBar: "なし",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im6.png",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13181960/",
+  },
+  {
+    title: "持ち込みありの都会BBQ",
+    genre: "ビアバー・BBQ",
+    smoker: "外！",
+    openBar: "あり",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im1.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13216280/",
+  },
+  {
+    title: "肉酒場 ゼニバ",
+    genre: "肉・ハンバーグ",
+    smoker: "喫煙室",
+    openBar: "なし",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im9.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13250033/",
+  },
+  {
+    title: "古き良き店の香り",
+    genre: "串・焼きとん",
+    smoker: "加熱式のみ",
+    openBar: "なし",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im5.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13052416/",
+  },
+  {
+    title: "馬！馬！馬！馬！",
+    genre: "肉バル・イタリアン",
+    smoker: "禁煙",
+    openBar: "なし",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im7.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13143781/",
+  },
+  {
+    title: "やすい・きれい・立ち飲み",
+    genre: "立ち飲み・カジュアルバー",
+    smoker: "吸える席あり",
+    openBar: "なし",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im9.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13231188/",
+  },
+  {
+    title: "大阪行きたいな～～",
+    genre: "お好み焼き",
+    smoker: "禁煙",
+    openBar: "なし",
+    imgLink: "https://www.reina-ryu-f.xyz/photoAlb_api/photo/im9.jpg",
+    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13134991/",
+  },
+];

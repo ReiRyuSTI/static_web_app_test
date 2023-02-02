@@ -6,17 +6,9 @@ import { HeaderComponent } from "components/base/HeaderComponent";
 import { MiniButton } from "components/base/MiniButton";
 import { MiniTitle } from "components/base/MiniTitle";
 import { ShopCardComponent } from "components/base/ShopCardComponent";
-import { shopType } from "types/moguType";
+import { shopDataIdol, shopDataRyu } from "provider/moguData";
 
 export const MoguTopPage = () => {
-  const data: shopType = {
-    title: "今日はおいしいごはんとか",
-    genre: "焼き鳥・海鮮",
-    price: "1,000～2,000円",
-    smoker: "屋内",
-    openBar: "あり",
-    linkTabelog: "https://tabelog.com/tokyo/A1314/A131402/13264409/",
-  };
   const [tabViewFlag, setTabViewFlag] = useState<boolean>(true);
   const onClickTab = () => {
     setTabViewFlag(!tabViewFlag);
@@ -38,11 +30,9 @@ export const MoguTopPage = () => {
           >
             <MiniTitle title="龍ちゃんおススメ" />
             <div className="flex w-full flex-col flex-wrap gap-[52px] md:flex-row">
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
+              {shopDataRyu.map((value) => (
+                <ShopCardComponent key={value.linkTabelog} shopInfo={value} />
+              ))}
             </div>
           </div>
           <div
@@ -53,13 +43,9 @@ export const MoguTopPage = () => {
           >
             <MiniTitle title="情報掲載（行ってみたいな～）" />
             <div className="flex w-full flex-col flex-wrap gap-[52px] md:flex-row">
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
-              <ShopCardComponent shopInfo={data} />
+              {shopDataIdol.map((value) => (
+                <ShopCardComponent key={value.linkTabelog} shopInfo={value} />
+              ))}
             </div>
           </div>
         </section>
